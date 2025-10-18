@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guna | Curhat, Kisah, & Inspirasi Harian</title>
+    <!-- Memuat Tailwind CSS untuk styling modern dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan font Inter dan warna dasar yang nyaman */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #1a202c;
+        }
+        .header-bg {
+            background-color: #3b82f6; /* Biru cerah sebagai warna utama */
+            background-image: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px 0 rgba(65, 132, 244, 0.75);
+        }
+        .glow-button:hover {
+            box-shadow: 0 8px 20px 0 rgba(65, 132, 244, 1);
+            transform: translateY(-2px);
+        }
+        /* Responsif: Menyembunyikan elemen tertentu pada mobile */
+        @media (max-width: 640px) {
+            .desktop-only-feature {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased">
+
+    <!-- Header & Hero Section -->
+    <header class="header-bg text-white py-12 md:py-20 rounded-b-3xl">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Nama Situs Besar -->
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Guna</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 opacity-90">
+                Ruang Amanmu untuk Curhat, Berbagi Kisah, dan Menemukan Inspirasi.
+            </p>
+
+            <!-- Tombol Utama (Call to Action) -->
+            <a href="#" class="inline-block glow-button bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300">
+                Mulai Curhat Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-16 md:py-20">
+
+        <!-- Bagian 1: Tentang Guna (Curhat dan Koneksi) -->
+        <section class="mb-16 md:mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
+                Mengapa Guna?
+            </h2>
+            <div class="max-w-4xl mx-auto text-center text-lg text-gray-600 space-y-6">
+                <p>
+                    Guna hadir sebagai teman yang siap mendengarkan tanpa menghakimi. Dalam kehidupan yang penuh tantangan, terkadang yang kita butuhkan hanyalah sebuah ruang untuk menumpahkan segala isi hati, baik itu kegembiraan kecil, kekecewaan mendalam, atau sekadar pemikiran acak di malam hari. Di sini, Anda bisa menuliskan keluh kesah, berbagi momen terbaik, atau mencari saran dari komunitas.
+                </p>
+                <p>
+                    Platform kami dirancang untuk mengakomodasi berbagai spektrum emosi dan topik. Kami percaya bahwa setiap cerita memiliki **guna** dan maknanya tersendiri. Dari permasalahan pribadi, hubungan, karir, hingga opini tentang isu-isu umum dan tren sosial, Guna mencakupnya. Ini adalah tempat di mana pengalaman Anda menjadi sumber inspirasi dan kekuatan bagi orang lain.
+                </p>
+                <p>
+                    Kami mengedepankan desain yang bersih dan antarmuka yang intuitif, terutama bagi pengguna mobile. Kami tahu bahwa ide untuk curhat atau berbagi kisah seringkali datang spontan—saat di perjalanan, saat sedang menunggu, atau sebelum tidur. Oleh karena itu, navigasi di Guna sangat responsif, memastikan Anda dapat menulis dan membaca dengan nyaman di perangkat apa pun. Kami menyediakan kategori yang jelas, mulai dari "Kisah Inspiratif," "Kegelisahan Harian," hingga "Diskusi Umum," memudahkan Anda menemukan dan membagikan konten yang relevan.
+                </p>
+            </div>
+        </section>
+
+        <!-- Bagian 2: Fitur Utama (Grid Card) -->
+        <section class="mb-16 md:mb-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Apa yang Bisa Kamu Temukan di Sini
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Kartu 1: Ruang Curhat Personal -->
+                <div class="card-shadow bg-white p-6 rounded-xl border border-gray-100 transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4">💬</div>
+                    <h3 class="text-xl font-semibold mb-3">Curhat Tanpa Batas</h3>
+                    <p class="text-gray-600">Bagikan kisah hidup Anda, kesulitan, dan harapan. Rasakan kelegaan saat kata-kata tertuang dalam tulisan. Kami menjamin privasi dan lingkungan yang suportif.</p>
+                </div>
+
+                <!-- Kartu 2: Topik Umum & Diskusi -->
+                <div class="card-shadow bg-white p-6 rounded-xl border border-gray-100 transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-purple-500 mb-4">💡</div>
+                    <h3 class="text-xl font-semibold mb-3">Opini dan Umum</h3>
+                    <p class="text-gray-600">Diskusikan tren terkini, politik ringan, film, buku, atau ilmu pengetahuan. Guna adalah tempat yang sempurna untuk menantang ide dan memperluas wawasan.</p>
+                </div>
+
+                <!-- Kartu 3: Jurnal dan Kisah Sukses -->
+                <div class="card-shadow bg-white p-6 rounded-xl border border-gray-100 transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-green-500 mb-4">🌱</div>
+                    <h3 class="text-xl font-semibold mb-3">Inspirasi Harian</h3>
+                    <p class="text-gray-600">Temukan kisah sukses, tips motivasi, atau jurnal perjalanan. Ambil pelajaran berharga dari pengalaman nyata pengguna lain di seluruh penjuru.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian 3: Statistik dan Komitmen (Mobile Friendly) -->
+        <section class="bg-blue-50 p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">
+                Komunitas Kami Terus Tumbuh
+            </h2>
+            <div class="flex flex-col md:flex-row justify-around items-center text-center space-y-6 md:space-y-0">
+                <div class="desktop-only-feature">
+                    <p class="text-4xl font-extrabold text-blue-600">10K+</p>
+                    <p class="text-gray-600 mt-1">Curhat Dibagikan</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-extrabold text-blue-600">500+</p>
+                    <p class="text-gray-600 mt-1">Pengguna Aktif Harian</p>
+                </div>
+                <div class="desktop-only-feature">
+                    <p class="text-4xl font-extrabold text-blue-600">100%</p>
+                    <p class="text-gray-600 mt-1">Ruang Aman</p>
+                </div>
+            </div>
+            <p class="mt-8 text-center text-sm text-gray-500">
+                Komitmen kami adalah menjaga Guna sebagai tempat yang bebas dari kebencian dan penuh empati.
+            </p>
+        </section>
+
+        <!-- Bagian Tambahan (Memastikan 300+ Kata) -->
+        <section class="mt-16 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-semibold mb-5 text-gray-800">Menemukan Solusi dan Perspektif Baru</h3>
+            <p class="text-gray-600 leading-relaxed text-lg">
+                Seringkali, masalah terasa begitu besar karena kita melihatnya dari satu sudut pandang saja. Dengan membagikannya di Guna, Anda tidak hanya melepaskan beban, tetapi juga membuka diri pada puluhan perspektif baru yang ditawarkan oleh sesama pengguna. Setiap komentar, setiap balasan, atau bahkan sekadar tombol 'suka' adalah bentuk dukungan nyata yang dapat mengubah cara Anda memandang situasi. Kami mendorong interaksi yang sehat, saling menghargai, dan konstruktif. Kami menyadari pentingnya kejujuran dan anonimitas, dan kami terus memperbarui sistem kami untuk memastikan kenyamanan setiap pengguna. Mari bergabung, tuliskan apa yang ada di pikiran Anda, dan rasakan kekuatan komunitas yang saling mendukung. Tidak ada topik yang terlalu kecil atau terlalu besar di Guna. Kami di sini untuk semuanya.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Guna. Hak Cipta Dilindungi.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-blue-400 transition duration-150">Kebijakan Privasi</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-blue-400 transition duration-150">Syarat Penggunaan</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
